@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>mis favoritos</h2>
+  <p>
+    <input type="text"  [(ngModel)]="nuevoLenguaje">
+    <button class="btn" (click)="onADD()">Añadir</button>
+  </p>
+  <ul>
+    <li *ngFor="let item of lista">{{item}}</li>
+  </ul>
+  {{lista}}
+  {{nuevoLenguaje}}
+</div>
